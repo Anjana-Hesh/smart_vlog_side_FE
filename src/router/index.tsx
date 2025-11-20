@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, type ReactNode } from 'react'
+import { lazy, Suspense, type ReactNode } from 'react'
 import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom'
 import { useAuth } from '../context/authContext'
 import Layout from '../component/Layout'
@@ -6,7 +6,7 @@ import Layout from '../component/Layout'
 const Login = lazy (() => import("../pages/LoginPage"))
 const Register = lazy (() => import ("../pages/RegisterPage"))
 const Home = lazy (() => import ("../pages/Home"))
-const Post = lazy (() => import ("../pages/post"))
+const Post = lazy (() => import ("../pages/Post"))
 const MyPost = lazy (() => import ("../pages/MyPost"))
 
 type  RequireAuthTypes = {children: ReactNode; roles?: string[]}
